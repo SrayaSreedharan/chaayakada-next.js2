@@ -5,7 +5,7 @@ import { FaMusic, FaCloudRain, FaUsers, FaBolt } from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <div className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("/tea-shop.png")' }}>
+    <div className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white" style={{ backgroundImage: 'url("/teashop.png")' }}>
       <Head>
         <title>Chaaya Kada</title>
       </Head>

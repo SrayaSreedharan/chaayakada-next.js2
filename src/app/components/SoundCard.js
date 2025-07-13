@@ -7,14 +7,11 @@ export default function SoundCard({ title, icon,audioSrc }) {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    const audio = new Audio(audioSrc);
-    audio.loop = true;
-    audio.volume = volume;
-    audioRef.current = audio;
-    return () => {
-      audio.pause();
-    };
-  }, [audioSrc]);
+    const audio = new Audio(audioSrc)
+    audio.loop = true
+    audioRef.current = audio
+    return () => audio.pause()
+  }, [audioSrc])
 
   useEffect(() => {
     if (audioRef.current) {
@@ -34,10 +31,7 @@ export default function SoundCard({ title, icon,audioSrc }) {
 
   return (
     <div className="flex flex-wrap justify-center gap-6">
- 
-
-
-    <div className="bg-black/90 rounded-xl p-6 text-white text-center w-full max-w-[280px]">
+    <div className="bg-black/85 rounded-xl p-6 text-white text-center w-full max-w-[280px]">
      <div className="flex justify-center items-center mb-4 text-white text-5xl">{icon}</div>
       <div className="text-xl font-bold mb-2">{title}</div>
       <input type="range" min="0" max="1" step="0.01" value={volume} onChange={(e) => setVolume(Number(e.target.value))} className="w-full mb-3"/>
