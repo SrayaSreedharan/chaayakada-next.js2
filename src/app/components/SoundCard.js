@@ -32,11 +32,11 @@ export default function SoundCard({ title, icon,audioSrc }) {
 
   return (
     <div className="flex flex-wrap justify-center gap-6">
-    <div className="bg-black/85 rounded-xl p-6 text-white text-center w-full max-w-[280px]">
+    <div className=" rounded-xl p-6 text-white text-center w-full max-w-[290px] h-60  border border-black rounded bg-black/60">
      <div className="flex justify-center items-center mb-4 text-white text-5xl">{icon}</div>
       <div className="text-xl font-bold mb-2">{title}</div>
-      <input type="range" min="0" max="1" step="0.01" value={volume} onChange={(e) => setVolume(Number(e.target.value))} className="w-full mb-3"/>
-      <button onClick={togglePlay} className="bg-white text-black px-4 py-1 rounded shadow">
+      <input type="range" min="0" max="1" step="0.01" value={volume} onChange={(e) => setVolume(Number(e.target.value))} className="w-full mb-3 "/>
+      <button onClick={togglePlay} className=" text-white px-4 py-1 rounded shadow border border-white rounded hover:bg-white/20">
         {isPlaying ? 'Pause' : 'Play'}
       </button>
     </div>
