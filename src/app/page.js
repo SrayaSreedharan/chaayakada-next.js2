@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import SoundCard from './components/SoundCard';
 import { FaMusic, FaCloudRain, FaUsers, FaBolt } from 'react-icons/fa';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <button className="mt-10 px-4 py-2 bg-white/10 border border-white rounded hover:bg-white/20">
         Enable Realistic Mode
       </button>
+      <Footer/>
     </div>
   );
 }
