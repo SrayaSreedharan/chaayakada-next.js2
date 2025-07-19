@@ -9,11 +9,11 @@ export default function Home() {
       <Head>
         <title>Chaaya Kada</title>
       </Head>
-      <h1 className="text-5xl md:text-6xl font-bold mb-5 mt-65 md:mt-0 text-center">
+      <h1 className="text-5xl md:text-6xl font-bold mb-5 mt-85 md:mt-0 text-center">
   chaaya kada
 </h1>
 
-      <div className="mt-32 flex flex-wrap gap-6 justify-center">
+      <div className="mt-35 flex flex-wrap gap-6 justify-center">
         <SoundCard title="Music" icon={<FaMusic />} audioSrc="/sounds/music.mp3" />
         <SoundCard title="Rain" icon={<FaCloudRain />} audioSrc="/sounds/rain.mp3" />
         <SoundCard title="Crowd" icon={<FaUsers />} audioSrc="/sounds/crowd.mp3" />
