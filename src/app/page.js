@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Chaaya Kada</title>
       </Head>
-      <h1 className="text-7xl md:text-6xl font-bold mb-5 mt-45 md:mt-0 text-center">
+      <h1 className="text-5xl md:text-6xl font-bold mb-5 mt-65 md:mt-0 text-center">
   chaaya kada
 </h1>
 
