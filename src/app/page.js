@@ -5,12 +5,15 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cover bg-center flex flex-col items-center justify-start text-white pt-18 px-6" style={{ backgroundImage: 'url(\"/teashop.png\")' }}>
+<div className="min-h-screen w-full flex flex-col items-center justify-start text-white pt-20 px-6 bg-cover bg-center bg-no-repeat bg-[url('/teashop.png')]">
       <Head>
         <title>Chaaya Kada</title>
       </Head>
-      <h1 className="text-6xl font-bold mb-5 rounded">chaaya kada</h1>
-      <div className="mt-30 flex flex-wrap gap-6 justify-center">
+      <h1 className="text-7xl md:text-6xl font-bold mb-5 mt-45 md:mt-0 text-center">
+  chaaya kada
+</h1>
+
+      <div className="mt-32 flex flex-wrap gap-6 justify-center">
         <SoundCard title="Music" icon={<FaMusic />} audioSrc="/sounds/music.mp3" />
         <SoundCard title="Rain" icon={<FaCloudRain />} audioSrc="/sounds/rain.mp3" />
         <SoundCard title="Crowd" icon={<FaUsers />} audioSrc="/sounds/crowd.mp3" />
